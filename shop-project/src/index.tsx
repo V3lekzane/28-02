@@ -25,31 +25,20 @@ import './style.css'
 // const App = () => {
 //     return <h1>Hello App component</h1>
 // }
-const Title = () => {
-    return (
-        <div>
-            <App />
-            <Content />
-        </div>
-    )
+interface TitleProps {
+    title: string
 }
+const Title = (props: TitleProps) => {
+    return <h1>Hello {props.title} component</h1>
+}
+
 const App = () => {
     return (
-        <>
-            <h1 id="text"></h1>
-            <p className="red">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-                porro aspernatur? Repellat blanditiis rem et labore fugit
-                excepturi at voluptatem voluptates facilis, debitis in
-                necessitatibus non nostrum cumque culpa quidem.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias facilis facere natus nihil veniam officia, distinctio
-                saepe possimus animi atque quos tempora nisi quidem architecto
-                hic, repellat voluptates tempore suscipit!
-            </p>
-        </>
+        <div>
+            <Title title="App" />
+            <Title title="React" />
+            <Content />
+        </div>
     )
 }
 const Content = () => {
@@ -74,6 +63,6 @@ const Content = () => {
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
-        <Title />
+        <App />
     </React.StrictMode>
 )
