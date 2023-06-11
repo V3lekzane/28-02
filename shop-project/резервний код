@@ -1,0 +1,40 @@
+// import './style.css'
+// import Title from './Title'
+// import { Content } from './content'
+
+//React Element
+// const title = React.createElement('h1', { id: 'title' }, 'Hello React')
+// const app = React.createElement(
+//     'div',
+//     null,
+//     React.createElement('p', { id: 'test' }, 'Hello p')
+// )
+//JSX
+// const app = <h1 id="text">Hello app</h1>
+// const app = (
+//     <div>
+//         <h1 id="text"></h1>
+//         <p>
+//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+//             porro aspernatur? Repellat blanditiis rem et labore fugit excepturi
+//             at voluptatem voluptates facilis, debitis in necessitatibus non
+//             nostrum cumque culpa quidem.
+//         </p>
+//     </div>
+// )
+// const App = () => {
+//     return <h1>Hello App component</h1>
+// }
+
+// <div>
+//     <Title title="App" num={10} />
+//     <Title title="React" num={20} />
+//     <Content
+//         text1={
+//             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,porro aspernatur? Repellat blanditiis rem et labore fugit excepturi at voluptatem voluptates facilis, debitis innecessitatibus non nostrum cumque culpa quidem.'
+//         }
+//         text2={
+//             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,porro aspernatur? Repellat blanditiis rem et labore fugit excepturi at voluptatem voluptates facilis, debitis innecessitatibus non nostrum cumque culpa quidem.'
+//         }
+//     />
+// </div>
