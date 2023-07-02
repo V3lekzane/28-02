@@ -1,17 +1,18 @@
-import * as React from 'react'
 import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-import './header.scss'
+
 import { Container } from '@mui/material'
+import Logo from 'components/logo/logo'
+import Menu from 'components/Menu/Menu'
+
+import './header.scss'
+import CartHeader from 'components/CartHeader/CartHeader'
 type Props = {}
 const Header = (props: Props) => {
     return (
-        <AppBar position="static">
+        <AppBar position="static" className="app-bar">
             <Container>
                 <Toolbar>
                     <IconButton
@@ -23,14 +24,9 @@ const Header = (props: Props) => {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1 }}
-                    >
-                        News
-                    </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Logo />
+                    <Menu />
+                    <CartHeader />
                 </Toolbar>
             </Container>
         </AppBar>
